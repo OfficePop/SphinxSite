@@ -30,12 +30,12 @@ False  True   True
 True   True   True
 =====  =====  ======
 
- ==========   =============   ================================
- Parameter    Type            Description
- ==========   =============   ================================
- a            float/complex   coefficient for quadratic term
- b            float/complex   coefficient for linear term
- c            float/complex   coefficient for constant term
- r1, r2       float/complex   return: the two roots of
-                              the quadratic polynomial
- ==========   =============   ================================
+==========   =============   ================================
+Parameter    Type            Description
+==========   =============   ================================
+a            float/complex   coefficient for quadratic term
+b            float/complex   coefficient for linear term
+c            float/complex   coefficient for constant term
+r1, r2       float/complex   return: the two roots of
+                             the quadratic polynomial
+==========   =============   ================================
