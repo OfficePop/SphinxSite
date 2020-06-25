@@ -17,7 +17,7 @@ Add a patrol report.
 |              | occurred.                   |            |                                     |
 +--------------+-----------------------------+------------+-------------------------------------+
 | UserID       | The alias of the individual |  String    | Matches the user’s Vanguard email   |
-|              |  who submitted the patrol.  |            | alias (For example, MScott).        |
+|              | who submitted the patrol.   |            | alias (For example, MScott).        |
 +--------------+-----------------------------+------------+-------------------------------------+
 | PatrolStart  | Time the patrol started.    |  Int       | Format is 24-hour (Ex: 0700         |
 |              |                             |            | or 1400).                           |
