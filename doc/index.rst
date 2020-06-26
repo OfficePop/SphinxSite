@@ -105,11 +105,11 @@ Adds a patrol report. A successful response requires all listed parameters be in
      }
    }
    
-+--------+---------------------------+
-| Code   | Description               |
-+--------+---------------------------+
-| 400    |  Invalid or missing input.|
-+--------+---------------------------+
+========= ================
+ **Code**  **Description** 
+--------- ----------------
+ 400       Invalid or missing input.
+========= ================
 
 Find a patrol report
 =====================================
