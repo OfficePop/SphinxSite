@@ -14,3 +14,8 @@
 {
   margin-left: 0;
 }
+
+.wy-table-responsive table td {
+white-space: normal;
+}
+
