@@ -1,10 +1,10 @@
-.th head
+thead .tr row-odd
 {
   color: #FFFFFF;
   background-color: #4472C4;
 }
 
-.tbody tr.row-odd
+tbody .tr row-odd
 {
   background-color: #D9E2F3;
 }
