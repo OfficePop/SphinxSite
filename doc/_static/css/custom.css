@@ -1,4 +1,4 @@
-.thead
+.th head
 {
   color: #FFFFFF;
   background-color: #4472C4;
@@ -9,7 +9,7 @@
   background-color: #D9E2F3;
 }
 
-.table docutils align-default
+.table
 
 {
   margin-left: 0;
