@@ -8,10 +8,7 @@ Actions
 =======
 .. toctree::
 
-    Submit a patrol
-    Find a patrol
-    Modify a patrol
-    Deleter a patrol
+   index
     
 Submit a patrol
 =====================================
