@@ -9,13 +9,8 @@
   background-color: #D9E2F3;
 }
 
-.table
-
+.wy-table-responsive table td 
 {
-  margin-left: 0;
-}
-
-.wy-table-responsive table td {
-white-space: normal;
+  white-space: normal;
 }
 
