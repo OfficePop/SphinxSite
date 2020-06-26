@@ -61,6 +61,14 @@ POST https://api.vanguard.com/patrol/
 
 Adds a patrol report. A successful response requires all listed parameters be included with appropriate values.
 
+**Responses**
+
+========= ================
+ **Code**  **Description** 
+--------- ----------------
+ 200       Successful Operation
+========= ================
+
 .. code-block:: json
    
    {
@@ -87,6 +95,10 @@ Adds a patrol report. A successful response requires all listed parameters be in
      }
    }
    
-
+========= ================
+ **Code**  **Description** 
+--------- ----------------
+ 400       Invalid input
+========= ================
 
 
