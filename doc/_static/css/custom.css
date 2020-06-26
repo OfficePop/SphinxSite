@@ -1,5 +1,16 @@
-th.head
+.thead
 {
-  color: #002060;
-  background-color: #70AD47;
+  color: #FFFFFF;
+  background-color: #4472C4;
+}
+
+.tbody tr.row-odd
+{
+  background-color: #D9E2F3;
+}
+
+.table docutils align-default
+
+{
+  margin-left: 0;
 }
