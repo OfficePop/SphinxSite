@@ -174,5 +174,48 @@ Find all patrols by a specific individual on a given date.   https://api.vanguar
  **Code**  **Description** 
 --------- ----------------
  400       Invalid or missing input.
+ 404       Patrol not found.
+========= ================
+
+PUT https://api.vanguard.com/patrol/
+=====================================
+
+Modify a patrol report.
+
+============== =========================== ======== ==========================================
+ **Parameter**  **Description**            **Type** **Notes**
+-------------- --------------------------- -------- ------------------------------------------
+ PatrolID      ID of the submitted patrol.   Int     Assigned automatically by the patrol app.
+============== =========================== ======== ==========================================
+
+**Responses**
+
+========= ================
+ **Code**  **Description** 
+--------- ----------------
+ 200       Successful operation.
+ 400       Invalid or missing input.
+ 404       Patrol not found.
+========= ================
+
+DELETE https://api.vanguard.com/patrol/
+=======================================
+
+Delete a patrol report
+
+============== =========================== ======== ==========================================
+ **Parameter**  **Description**            **Type** **Notes**
+-------------- --------------------------- -------- ------------------------------------------
+ PatrolID      ID of the submitted patrol.   Int     Assigned automatically by the patrol app.
+============== =========================== ======== ==========================================
+
+**Responses**
+
+========= ================
+ **Code**  **Description** 
+--------- ----------------
+ 200       Successful operation.
+ 400       Invalid or missing input.
+ 404       Patrol not found.
 ========= ================
 
