@@ -4,6 +4,13 @@ Endpoint: patrol
 
 The patrol endpoint provides access to all patrol reports submitted through the Vanguard Patrol App or web portal, up to the last two years. Several actions are supported by the endpoint as detailed below, and the data can be organized and filtered by multiple parameters as once (For example, data could be filtered first by date, then further by UserID or Incident).
 
+.. toctree::
+
+    POST https://api.vanguard.com/patrol/
+    GET https://api.vanguard.com/patrol/
+    PUT https://api.vanguard.com/patrol/
+    DELETE https://api.vanguard.com/patrol/
+
 POST https://api.vanguard.com/patrol/
 =====================================
 
@@ -107,7 +114,7 @@ Adds a patrol report. A successful response requires all listed parameters be in
 GET https://api.vanguard.com/patrol/
 =====================================
 
-List a patrol report.
+List a patrol report. At least one parameter required.
 
 +------------------+-----------------------------+------------+-------------------------------------+
 |  Parameter       |  Description                |     Type   |    Notes                            |
@@ -180,7 +187,7 @@ Find all patrols by a specific individual on a given date.   https://api.vanguar
 PUT https://api.vanguard.com/patrol/
 =====================================
 
-Modify a patrol report.
+Modify a patrol report. PatrolID paramater is required.
 
 ============== =========================== ======== ==========================================
  **Parameter**  **Description**            **Type** **Notes**
@@ -201,7 +208,7 @@ Modify a patrol report.
 DELETE https://api.vanguard.com/patrol/
 =======================================
 
-Delete a patrol report
+Delete a patrol report. PatrolID parameter is required.
 
 ============== =========================== ======== ==========================================
  **Parameter**  **Description**            **Type** **Notes**
