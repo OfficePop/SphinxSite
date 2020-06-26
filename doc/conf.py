@@ -1,7 +1,7 @@
 master_doc = 'index'
-project = "Calculate.Solutions"
-copyright = '2020, Calculate Solutions, Inc.'
-author = 'Calculate Solutions, Inc.'
+project = "Endpoint: patrol"
+copyright = '2020, Vanguard Security, Inc.'
+author = 'Vanguard Security, Inc.'
 version = release = ''
 
 # These folders are copied to the documentation's HTML output
