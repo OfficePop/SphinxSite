@@ -122,8 +122,8 @@ List a patrol report.
 |                  | who submitted the patrol.   |            | alias (For example, MScott).        |
 +------------------+-----------------------------+------------+-------------------------------------+
 | Incident         | Indicates whether anything  |  Boolean   | "True" will display any reports     |
-|                  | unusual was encountered     |            | where the patrol officer witnessed |
-|                  | during the patrol.          |            | an incident in at least one area.  |
+|                  | unusual was encountered     |            | where the patrol officer witnessed  |
+|                  | during the patrol.          |            | an incident in at least one area.   |
 +------------------+-----------------------------+------------+-------------------------------------+
 
 **Query Examples**
