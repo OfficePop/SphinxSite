@@ -4,6 +4,11 @@ Endpoint: patrol
 
 The patrol endpoint provides access to all patrol reports submitted through the Vanguard Patrol App or web portal, up to the last two years. Several actions are supported by the endpoint as detailed below, and the data can be organized and filtered by multiple parameters as once (For example, data could be filtered first by date, then further by UserID or Incident).
 
+POST https://api.vanguard.com/patrol/
+=====================================
+
+Adds a patrol report. A successful response requires all listed parameters be included with appropriate values.
+
 +------------------+-----------------------------+------------+-------------------------------------+
 |  Parameter       |  Description                |     Type   |    Notes                            |
 +==================+=============================+============+=====================================+
@@ -59,11 +64,6 @@ The patrol endpoint provides access to all patrol reports submitted through the 
 |    |             |                             |            | value will be "Nothing to report."  |
 +----+-------------+-----------------------------+------------+-------------------------------------+
 
-POST https://api.vanguard.com/patrol/
-=====================================
-
-Adds a patrol report. A successful response requires all listed parameters be included with appropriate values.
-
 **Responses**
 
 ========= ================
@@ -104,7 +104,7 @@ Adds a patrol report. A successful response requires all listed parameters be in
  400       Invalid or missing input.
 ========= ================
 
-GET https://api.vanguard.com/patrol/{patrolID}
+GET https://api.vanguard.com/patrol/
 =====================================
 
 List a patrol report.
@@ -131,8 +131,48 @@ List a patrol report.
 ==========================================================   ============================================================
 **Usage**                                                    **URL**
 ----------------------------------------------------------   ------------------------------------------------------------
-Find a specific patrol by ID.                                https://api.vanguard.com/patrol?patrolID=54638
+Find a specific patrol by ID.                                https://api.vanguard.com/patrol?patrolID=546387
 Find all patrols for a given date.                           https://api.vanguard.com/patrol?date=20200517
 Find all patrols on a given date that had incidents.         https://api.vanguard.com/patrol?date=20200517&incident=true
-Find all patrols by a specific individual on a given date.   https://api.vanguard.com/patrol?UserID=MDavis&date=20200517
+Find all patrols by a specific individual on a given date.   https://api.vanguard.com/patrol?UserID=MDavid&date=20200517
 ==========================================================   ============================================================
+
+**Responses**
+
+========= ================
+ **Code**  **Description** 
+--------- ----------------
+ 200       Successful operation.
+========= ================
+
+::
+
+  {
+    "patrolId": 546387,
+    "userId": "MDavid",
+    "Date": "2020-05-17",
+    "PatrolStart": 1000,
+    "PatrolEnd": 1100,
+    "PerimeterFence":{
+      "Time": 1000,
+      "Incident": false,
+      "Details": "Nothing to report."
+    },
+    "FacilityExterior":{
+      "Time": 1024,
+      "Incident": false,
+      "PatrolDetails": "Nothing to report."
+    },
+    "FacilityInterior":{
+      "Time": 1049,
+      "Incident": false,
+      "Details": "Nothing to report."
+    }
+  }
+
+========= ================
+ **Code**  **Description** 
+--------- ----------------
+ 400       Invalid or missing input.
+========= ================
+
