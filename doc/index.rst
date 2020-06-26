@@ -5,6 +5,7 @@ Endpoint: patrol
 The patrol endpoint provides access to all patrol reports submitted through the Vanguard Patrol App or web portal, up to the last two years. Several actions are supported by the endpoint, as detailed below.
 
 .. contents:: Actions
+   :local:
     
 Submit a patrol
 =====================================
