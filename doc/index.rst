@@ -104,12 +104,12 @@ Adds a patrol report. A successful response requires all listed parameters be in
        individuals in the area. Fire escape had been opened and de-alarmed for maintenance but was not properly closed."
      }
    }
-   
-========= ================
- **Code**  **Description** 
---------- ----------------
- 400       Invalid or missing input.
-========= ================
+
++------+---------------------------+
+| Code |  Description              |               
++======+===========================+
+| 400  | Invalid or missing input. |         
++------+---------------------------+
 
 Find a patrol report
 =====================================
@@ -138,22 +138,25 @@ refine data.
 
 **Query Examples**
 
-==========================================================   ============================================================
-**Usage**                                                    **URL**
-----------------------------------------------------------   ------------------------------------------------------------
-Find a specific patrol by ID.                                https://api.vanguard.com/patrol?patrolID=546387
-Find all patrols for a given date.                           https://api.vanguard.com/patrol?date=20200517
-Find all patrols on a given date that had incidents.         https://api.vanguard.com/patrol?date=20200517&incident=true
-Find all patrols by a specific individual on a given date.   https://api.vanguard.com/patrol?UserID=MDavid&date=20200517
-==========================================================   ============================================================
++----------------------------------------------------------+-------------------------------------------------------------+
+| Usage                                                    |  URL                                                        |                
++==========================================================+=============================================================+
+|Find a specific patrol by ID.                             |  https://api.vanguard.com/patrol?patrolID=546387            |
++----------------------------------------------------------+-------------------------------------------------------------+
+|Find all patrols for a given date.                        |  https://api.vanguard.com/patrol?date=20200517              |
++----------------------------------------------------------+-------------------------------------------------------------+
+|Find all patrols on a given date that had incidents.      |  https://api.vanguard.com/patrol?date=20200517&incident=true|
++----------------------------------------------------------+-------------------------------------------------------------+
+|Find all patrols by a specific individual on a given date.|  https://api.vanguard.com/patrol?UserID=MDavid&date=20200517|
++----------------------------------------------------------+-------------------------------------------------------------+
 
 **Responses**
 
-========= ================
- **Code**  **Description** 
---------- ----------------
- 200       Successful operation.
-========= ================
++------+-----------------------+
+| Code |  Description          |               
++======+=======================+
+| 200  | Successful operation. |         
++------+-----------------------+
 
 ::
 
@@ -180,12 +183,13 @@ Find all patrols by a specific individual on a given date.   https://api.vanguar
     }
   }
 
-========= ================
- **Code**  **Description** 
---------- ----------------
- 400       Invalid or missing input.
- 404       Patrol not found.
-========= ================
++------+---------------------------+
+| Code |  Description              |               
++======+===========================+
+| 400  | Invalid or missing input. |
++------+---------------------------+
+| 404  | Patrol not found.         |
++------+---------------------------+
 
 Modify a patrol report
 =====================================
@@ -194,21 +198,24 @@ URL: PUT https://api.vanguard.com/patrol/{PatrolID}
 
 Updates a submitted patrol report with new or additional data. patrolID parameter is required.
 
-============== =========================== ======== ==========================================
- **Parameter**  **Description**            **Type** **Notes**
--------------- --------------------------- -------- ------------------------------------------
- patrolID      ID of the submitted patrol.   Int     Assigned automatically by the patrol app.
-============== =========================== ======== ==========================================
++------------------+-----------------------------+------------+-------------------------------------+
+|  Parameter       |  Description                |     Type   |    Notes                            |
++==================+=============================+============+=====================================+
+| patrolID         | ID of the submitted patrol. |  int       | Assigned automatically by the patrol|
+|                  |                             |            | app.                                |
++------------------+-----------------------------+------------+-------------------------------------+
 
 **Responses**
 
-========= ================
- **Code**  **Description** 
---------- ----------------
- 200       Successful operation.
- 400       Invalid or missing input.
- 404       Patrol not found.
-========= ================
++------+---------------------------+
+| Code |  Description              |               
++======+===========================+
+| 200  | Successful operation.     |
++------+---------------------------+
+| 400  | Invalid or missing input. |
++------+---------------------------+
+| 404  | Patrol not found.         |
++------+---------------------------+
 
 Delete a patrol
 =======================================
@@ -218,19 +225,22 @@ URL: DELETE https://api.vanguard.com/patrol/{patrolID}
 Deletes a patrol report. PatrolID parameter is required. As a measure of Data Loss Prevention, deleted patrol reports are first archived in a separate 
 database for 30 days before they are permanently deleted.
 
-============== =========================== ======== ==========================================
- **Parameter**  **Description**            **Type** **Notes**
--------------- --------------------------- -------- ------------------------------------------
- patrolID      ID of the submitted patrol.   Int     Assigned automatically by the patrol app.
-============== =========================== ======== ==========================================
++------------------+-----------------------------+------------+-------------------------------------+
+|  Parameter       |  Description                |     Type   |    Notes                            |
++==================+=============================+============+=====================================+
+| patrolID         | ID of the submitted patrol. |  int       | Assigned automatically by the patrol|
+|                  |                             |            | app.                                |
++------------------+-----------------------------+------------+-------------------------------------+
 
 **Responses**
 
-========= ================
- **Code**  **Description** 
---------- ----------------
- 200       Successful operation.
- 400       Invalid or missing input.
- 404       Patrol not found.
-========= ================
++------+---------------------------+
+| Code |  Description              |               
++======+===========================+
+| 200  | Successful operation.     |
++------+---------------------------+
+| 400  | Invalid or missing input. |
++------+---------------------------+
+| 404  | Patrol not found.         |
++------+---------------------------+
 
