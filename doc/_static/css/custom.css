@@ -1,14 +1,21 @@
-#submit-a-patrol th.head
+div.section th.head
 {
   
   background-color: #4472C4;
+  border: none;
 }
 
-#submit-a-patrol tr.row-odd
+div.section td
 {
-  background-color: #D9E2F3;
+  border: none;
 }
 
-#submit-a-patrol th.head p
+div.section tr.row-odd
+{
+  background-color: #D9E2F3;  
+}
+
+div.section th.head p
 {
   color: #FFFFFF;
+}
