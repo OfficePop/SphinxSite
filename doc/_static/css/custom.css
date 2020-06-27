@@ -1,5 +1,11 @@
+.docutils td
+{
+  white-space: normal !important;
+}
+
 div.section th.head
-{  
+{ 
+  color: #FFFFFF;
   background-color: #4472C4;
   border: none;
 }
@@ -12,14 +18,4 @@ div.section td
 div.section tr.row-odd
 {
   background-color: #D9E2F3;  
-}
-
-div.section th.head
-{
-  color: #FFFFFF;
-}
-
-.wy-table-responsive table td
-{
-  white-space: normal; 
 }
