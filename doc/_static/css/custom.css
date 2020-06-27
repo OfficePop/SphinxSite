@@ -18,3 +18,8 @@ div.section th.head p
 {
   color: #FFFFFF;
 }
+
+.wy-table-responsive div.section td
+{
+  white-space: normal; 
+}
