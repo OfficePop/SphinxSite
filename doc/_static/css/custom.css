@@ -1,5 +1,14 @@
-.th head
+#submit-a-patrol th.head
 {
-  color: #002060;
-  background-color: #70AD47;
+  
+  background-color: #4472C4;
 }
+
+#submit-a-patrol tr.row-odd
+{
+  background-color: #D9E2F3;
+}
+
+#submit-a-patrol th.head p
+{
+  color: #FFFFFF;
