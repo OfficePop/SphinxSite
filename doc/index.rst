@@ -72,11 +72,11 @@ Adds a patrol report. A successful response requires all listed parameters be in
 **Responses**
 
 
-========= ======================
- **Code**  **Description** 
---------- ----------------------
- 200       Successful operation.
-========= ======================
++------+-----------------------+
+| Code |  Description          |               
++======+=======================+
+| 200  | Successful operation. |         
++------+-----------------------+
 
 
 :: 
