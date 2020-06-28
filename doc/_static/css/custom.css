@@ -3,7 +3,7 @@ div.section table, td
   white-space: normal !important;  
 }
 
-div.section tbody, tr, td
+div.section th, td
 {
   border: none; 
 }
@@ -11,12 +11,7 @@ div.section tbody, tr, td
 div.section thead, th
 {
   color: #FFFFFF;
-}
-
-div.section th.head
-{ 
-  background-color: #4472C4;
-  border: none;
+  background-color: #4472C4;    
 }
 
 div.section tr.row-odd
