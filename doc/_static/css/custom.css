@@ -1,7 +1,11 @@
-div.section table, td, tr
+div.section table, td
 {
-  white-space: normal !important;
-  border: none;
+  white-space: normal !important;  
+}
+
+div.section tbody, tr, td
+{
+  border: none; 
 }
 
 div.section thead, th
