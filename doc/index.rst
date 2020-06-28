@@ -78,7 +78,7 @@ Adds a patrol report. A successful response requires all listed parameters be in
 | 200  | Successful operation. |         
 +------+-----------------------+
 
-
+**JSON Body**
 :: 
    
    {
@@ -157,6 +157,7 @@ refine data.
 | 200  | Successful operation. |         
 +------+-----------------------+
 
+**JSON Body**
 ::
 
   {
