@@ -100,7 +100,7 @@ Adds a patrol report. A successful response requires all listed parameters be in
      "facilityInterior":{
        "time": 0749,
        "incident": true,
-       "details": "At approximately 0755, Encountered an open fire escape in western corridor. Notified dispatcher, closed fire escape, and queried individuals in the area. Fire escape had been opened and de-alarmed for maintenance but was not properly closed."
+       "details": "Found entry door propped open at approximately 0755."
      }
    }
 
