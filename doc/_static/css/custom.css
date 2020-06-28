@@ -3,9 +3,9 @@ div.section table, td
   white-space: normal !important;  
 }
 
-div.section tbody, tr, td
+div.section table, tbody, tr, td
 {
-//  border: none; 
+  border: none; 
 }
 
 div.section thead, th
