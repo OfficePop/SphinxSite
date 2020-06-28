@@ -1,11 +1,15 @@
-.docutils td
+div.section table td
 {
   white-space: normal !important;
 }
 
+div.section thead
+{
+  color: #FFFFFF;
+}
+
 div.section th.head
 { 
-  color: #FFFFFF;
   background-color: #4472C4;
   border: none;
 }
