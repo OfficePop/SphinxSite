@@ -3,9 +3,9 @@ div.section table, td
   white-space: normal !important;  
 }
 
-.docutils
+div.section th, td
 {
-  border: 0 none; 
+  border: none; 
 }
 
 div.section thead, th
