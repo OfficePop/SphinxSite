@@ -93,7 +93,7 @@ Adds a patrol report. A successful response requires all listed parameters be in
       "details": "Nothing to report."
      },
      "facilityExterior":{
-       "yime": 0733,
+       "time": 0733,
        "incident": false,
        "details": "Nothing to report."
      },
