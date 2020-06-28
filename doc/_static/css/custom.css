@@ -1,9 +1,10 @@
-div.section table td
+div.section table, td, tr
 {
   white-space: normal !important;
+  border: none;
 }
 
-div.section thead
+div.section thead, th
 {
   color: #FFFFFF;
 }
@@ -11,11 +12,6 @@ div.section thead
 div.section th.head
 { 
   background-color: #4472C4;
-  border: none;
-}
-
-div.section td
-{
   border: none;
 }
 
