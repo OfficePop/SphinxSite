@@ -3,7 +3,7 @@ div.section table, td
   white-space: normal !important;  
 }
 
-div.section th, td
+div.section tbody, tr, td
 {
   border: none; 
 }
