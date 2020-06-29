@@ -114,7 +114,9 @@ Find a patrol report
 =====================================
 
 **GET** https://api.vanguard.com/patrol/{PatrolID}
+
 **GET** https://api.vanguard.com/patrol/{Date}
+
 **GET** https://api.vanguard.com/patrol/{UserID}
 
 List a patrol report. Each request requires at least one query parameter, and can add more to further refine data. 
