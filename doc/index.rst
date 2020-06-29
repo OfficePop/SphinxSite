@@ -10,7 +10,7 @@ The patrol endpoint provides access to all patrol reports submitted through the 
 Submit a patrol
 =====================================
 
-URL: POST https://api.vanguard.com/patrol/{PatrolID}
+**POST** https://api.vanguard.com/patrol/
 
 Adds a patrol report. A successful response requires all listed parameters be included with appropriate values.
 
@@ -113,10 +113,11 @@ Adds a patrol report. A successful response requires all listed parameters be in
 Find a patrol report
 =====================================
 
-URL: GET https://api.vanguard.com/patrol/{PatrolID/Date/UserID}
+**GET** https://api.vanguard.com/patrol/{PatrolID}
+**GET** https://api.vanguard.com/patrol/{Date}
+**GET** https://api.vanguard.com/patrol/{UserID}
 
-List a patrol report. At least one instance of the patrolID, date, or userID parameter is required. Queries can be run with several parameters to further 
-refine data.
+List a patrol report. Each request requires at least one query parameter, and can add more to further refine data. 
 
 +------------------+-----------------------------+------------+-------------------------------------+
 |  Parameter       |  Description                |     Type   |    Notes                            |
@@ -194,7 +195,7 @@ refine data.
 Modify a patrol report
 =====================================
 
-URL: PUT https://api.vanguard.com/patrol/{PatrolID}
+**PUT** https://api.vanguard.com/patrol/{PatrolID}
 
 Updates a submitted patrol report with new or additional data. patrolID parameter is required.
 
@@ -220,7 +221,7 @@ Updates a submitted patrol report with new or additional data. patrolID paramete
 Delete a patrol
 =======================================
 
-URL: DELETE https://api.vanguard.com/patrol/{patrolID}
+**DELETE** https://api.vanguard.com/patrol/{patrolID}
 
 Deletes a patrol report. PatrolID parameter is required. As a measure of Data Loss Prevention, deleted patrol reports are first archived in a separate 
 database for 30 days before they are permanently deleted.
