@@ -73,16 +73,7 @@ Submit a patrol
 |    |             |                             |            | value will be "Nothing to report."  |
 +----+-------------+-----------------------------+------------+-------------------------------------+
 
-**Responses**
-
-
-+------+-----------------------+
-| Code |  Description          |               
-+======+=======================+
-| 200  | Successful operation. |         
-+------+-----------------------+
-
-**JSON Body**
+**JSON Body Request**
 :: 
    
    {
@@ -107,15 +98,19 @@ Submit a patrol
        "details": "Found entry door propped open at approximately 0755."
      }
    }
+   
+ **Responses**
 
 +------+---------------------------+
 | Code |  Description              |               
 +======+===========================+
-| 400  | Invalid or missing input. |         
+| 200  | Successful operation.     |         
++------+---------------------------+
+| 400  |  Invalid or missing input.|               
 +------+---------------------------+
 
-Find a patrol report
-=====================================
+Find a patrol 
+===============
 
 .. http:get:: https://api.vanguard.com/patrol/{PatrolID}
 .. http:get:: https://api.vanguard.com/patrol/{Date}
@@ -196,8 +191,8 @@ Find a patrol report
 | 404  | Patrol not found.         |
 +------+---------------------------+
 
-Modify a patrol report
-=====================================
+Modify a patrol 
+==================
 
 .. http:put:: https://api.vanguard.com/patrol/{PatrolID}
 
@@ -223,7 +218,7 @@ Modify a patrol report
 +------+---------------------------+
 
 Delete a patrol
-=======================================
+==================
 
 .. http:delete:: https://api.vanguard.com/patrol/{patrolID}
 
