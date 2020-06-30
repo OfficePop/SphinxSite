@@ -14,9 +14,9 @@ Also available in Swagger_.
 Submit a patrol
 =====================================
 
-  .. http:post:: https://api.vanguard.com/patrol/
+.. http:post:: https://api.vanguard.com/patrol/
 
-      Adds a patrol report. A successful response requires all listed parameters be included with appropriate values.
+    Adds a patrol report. A successful response requires all listed parameters be included with appropriate values.
 
 +------------------+-----------------------------+------------+-------------------------------------+
 |  Parameter       |  Description                |  Type      |    Notes                            |
@@ -117,11 +117,11 @@ Submit a patrol
 Find a patrol report
 =====================================
 
-  .. http:get:: https://api.vanguard.com/patrol/{PatrolID}
-  .. http:get:: https://api.vanguard.com/patrol/{Date}
-  .. http:get:: https://api.vanguard.com/patrol/{UserID}
+.. http:get:: https://api.vanguard.com/patrol/{PatrolID}
+.. http:get:: https://api.vanguard.com/patrol/{Date}
+.. http:get:: https://api.vanguard.com/patrol/{UserID}
 
-      List a patrol report. Each request requires at least one query parameter, and can add more to further refine data. 
+    List a patrol report. Each request requires at least one query parameter, and can add more to further refine data. 
 
 +------------------+-----------------------------+------------+-------------------------------------+
 |  Parameter       |  Description                |     Type   |    Notes                            |
@@ -199,9 +199,9 @@ Find a patrol report
 Modify a patrol report
 =====================================
 
-  .. http:put:: https://api.vanguard.com/patrol/{PatrolID}
+.. http:put:: https://api.vanguard.com/patrol/{PatrolID}
 
-      Updates a submitted patrol report with new or additional data. patrolID parameter is required.
+    Updates a submitted patrol report with new or additional data. patrolID parameter is required.
 
 +------------------+-----------------------------+------------+-------------------------------------+
 |  Parameter       |  Description                |     Type   |    Notes                            |
@@ -225,10 +225,10 @@ Modify a patrol report
 Delete a patrol
 =======================================
 
-  .. http:delete:: https://api.vanguard.com/patrol/{patrolID}
+.. http:delete:: https://api.vanguard.com/patrol/{patrolID}
 
-      Deletes a patrol report. PatrolID parameter is required. As a measure of Data Loss Prevention, deleted patrol reports are first archived in a separate database for 30 days 
-      before they are permanently deleted.
+    Deletes a patrol report. PatrolID parameter is required. As a measure of Data Loss Prevention, deleted patrol reports are first archived in a separate database for 30 days 
+    before they are permanently deleted.
 
 +------------------+-----------------------------+------------+-------------------------------------+
 |  Parameter       |  Description                |     Type   |    Notes                            |
