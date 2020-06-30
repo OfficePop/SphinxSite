@@ -99,7 +99,7 @@ Submit a patrol
      }
    }
    
- **Responses**
+**Responses**
 
 +------+---------------------------+
 | Code |  Description              |               
@@ -157,7 +157,7 @@ Find a patrol
 | 200  | Successful operation. |         
 +------+-----------------------+
 
-**JSON Body**
+**JSON Body Response**
 ::
 
   {
